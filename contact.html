@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="img/logo.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="en-tete">
+        <!--<a href="#" class="mon-logo">VMS</a>-->
+        <a href="#"><div align="center"><img src="img/logo.jpg" alt="logo" class="mon-logo"></div></a>
+        <nav class="menu">
+            <a href="index.html">Présentation</a>
+            <a href="etudes.html">Etudes</a>
+            <a href="divers.html">Divers</a>
+            <a href="reli.html">Religion</a>
+            <a href="contact.html">Me Contacter</a>
+        </nav>
+    </header>
+    
+    <form   action="contact.html">
+        <fieldset class="form">
+            <legend><h2 class="forml">Formulaire de contact</h2></legend>
+            <div>
+                <label for="nom" class="label">Ecrivez votre Nom</label>
+                <input type="text" name="nom" id="nom" required class="in">
+            </div>
+
+            <div>
+                <label for="post" class="label">Ecrivez votre Post-Nom</label>
+                <input type="text" name="post-nom" id="post" required class="in">
+            </div>
+                
+            <div>
+                <label for="pre" class="label">Ecrivez votre Prenom-Nom</label>
+                <input type="text" name="prenom" id="pre" required class="in">
+            </div>
+
+            <div>
+                <label for="email" class="label">Ecrivez votre Mail</label>
+                <input type="email" name="" id="email" required placeholder="email@gmail.com" class="in">
+            </div>
+
+            <div>
+                <label for="mot" class="label">Ecrivez votre mot de passe</label>
+                <input type="password" name="" id="mot" class="in">
+            </div>
+
+            <div>
+                <label for="ville">Quel est votre ville ?</label>
+                <select name="ville" id="ville">
+                    <option value="lshi">Lubumbashi</option>
+                    <option value="kin">kinshasa</option>
+                    <option value="lik">likasi</option>
+                    <option value="kol">kolwezi</option>
+                    <option value="kal">kalemi</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="sexe">Sexe:</label>
+                <div>
+                    <input type="radio" name="sexe" id="homme" checked>
+                    <label for="homme">Homme</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="sexe" id="femme">
+                    <label for="femme">Femme</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="msg">Ecrivez votre Message</label><br>
+                <textarea name="Message" id="msg" cols="30" rows="10" placeholder="Ecrivez ici"></textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" name="acc" id="accept">
+                <label for="accept">Je ne suis pas un Robot</label>
+            </div>
+
+            <div>
+                <input type="submit" value="Envoyer" class="sub">
+                <input type="reset" value="Annuler" class="sub">
+            </div>
+        </fieldset>
+    </form>
+    <footer>
+        <h4>Mon Adresse</h4>
+        <address>55, Av\Kaseba, Q\Kilobelobe, C\Annexe</address>
+    </footer>
+</body>
+</html>
